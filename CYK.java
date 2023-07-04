@@ -51,7 +51,7 @@ public class CYK {
 	    public static void main(String[] args) {
 
 	        Map<String, List<String>> alfabeto = new HashMap<>();
-	        alfabeto.put("S", Arrays.asList("AB", "XB", "XS")); 
+	        alfabeto.put("S", Arrays.asList("AB", "XB", "XA")); 
 	        alfabeto.put("A", Arrays.asList("a"));
 	        alfabeto.put("B", Arrays.asList("b"));
 	        alfabeto.put("X", Arrays.asList("AS"));
@@ -60,7 +60,7 @@ public class CYK {
 	        System.out.print("Digite uma cad: ");
 	        String cad = scanner.nextLine();
 	        boolean pertence = parse(alfabeto, cad);
-	        System.out.println(pertence ? "Linguagem aceita!" : "Linguagem n„o aceita!");
+	        System.out.println(pertence ? "Linguagem aceita!" : "Linguagem n√£o aceita!");
 	        scanner.close();
 	    }
 	}
